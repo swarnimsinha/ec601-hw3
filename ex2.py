@@ -16,11 +16,11 @@ def main():
     #RGB chanels
     print("RGB value: ",src[20,25])
     #RED
-    cv2.imshow("RED",r)
+    cv2.imwrite("RED.png",r)
     #BLUE
-    cv2.imshow("BLUE",b)
+    cv2.imwrite("BLUE.png",b)
     #GREEN
-    cv2.imshow("GREEN",g)
+    cv2.imwrite("GREEN.png",g)
 
 
     #YCrCb chanels
@@ -30,11 +30,11 @@ def main():
 
     print("YCrCb value: ",src[20,25])
     #RED
-    cv2.imshow("Yr",Y)
+    cv2.imwrite("Yr.png",Y)
     #BLUE
-    cv2.imshow("Cr",Cr)
+    cv2.imwrite("Cr.png",Cr)
     #GREEN
-    cv2.imshow("Cb",Cb)
+    cv2.imwrite("Cb.png",Cb)
 
 
     #YCrCb chanels
@@ -44,11 +44,11 @@ def main():
 
     print("HSV value: ",src[20,25])
     #HUE
-    cv2.imshow("Hue",H)
+    cv2.imwrite("Hue.png",H)
     #Saturation
-    cv2.imshow("Saturation",S)
+    cv2.imwrite("Saturation.png",S)
     #Value
-    cv2.imshow("Value",V)
+    cv2.imwrite("Value.png",V)
 
 
     cv2.waitKey(0)
